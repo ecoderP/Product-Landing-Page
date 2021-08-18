@@ -1,0 +1,227 @@
+body {
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 10px;
+  font-family: verdana;
+  line-height: 1.5;
+  width: 100%;
+  background-color: #eee;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: auto;
+  width: 75%;
+  max-width: 100%;
+  /*display: flex;
+  flex-direction: column;*/
+}
+/* Texts Styles */
+h1, h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1rem;
+}
+/* Links Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+/* Buttons */
+.btn {
+  background-color: #f1c40f;
+  padding: 5px;
+  border: 1px solid yellow;
+  border-radius: 5%;
+}
+.btn:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+/* Lists */
+ul {
+  list-style: none;
+}
+/* header and navigation */
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 1.5rem;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  width: 20%;
+}
+img {
+  max-width: 100%;
+}
+#nav-bar {
+  width: 40%;
+}
+#nav-bar ul {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav-bar ul {
+  padding-left: 0.8rem;
+}
+/* Hero section */
+#hero {
+  margin-top: 100px;
+  text-align: center;
+}
+/* Form styles */
+#form {
+  padding: 1.5rem;
+}
+#form input {
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+#email {
+  width: 35%;
+}
+#submit {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#features,
+#how-it-works,
+#pricing,
+footer {
+  margin: 3rem auto;  
+}
+/* features section */
+.features-items {
+  padding: 2rem 1rem;
+  display: flex;
+}
+.fas {
+  font-size: 3rem;
+  font-weight: 900;
+  color: gold;
+  margin: 1rem;
+  padding-right: 3rem;
+}
+/* How it works section */
+#video {
+  max-width: 100%;
+  margin: auto 10rem;
+}
+/* Pricing section */
+#pricing {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-card {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+.card-head {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 100%;
+  background-color: #ddd;
+  padding: 1rem 0;
+  border-top-right-radius: 14%;
+  border-top-left-radius: 14%;
+}
+.product-price {
+  font-size: 1.4rem;
+  margin: 1rem auto;
+  font-weight: 500;
+}
+.pricing-card .btn {
+  
+  margin: 1.5rem auto 1rem auto;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+/* Footer */
+footer {
+  width: 70%;
+  background-color: #ddd;
+  margin-bottom: 0;
+  text-align: right;
+  padding: 1rem;
+}
+
+#footer-nav ul { 
+  display: flex;
+  justify-content: flex-end;
+}
+#footer-nav ul li {
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+footer p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* media query*/
+@media only screen and (max-width: 700px) {
+  main {
+    width: 100%;
+  }
+  #header {
+    width: 100%;
+    flex-direction: column;
+  }
+  #logo {
+    width: 100%;
+  }
+  #nav-bar {
+    width: 100%;
+  }
+  #nav-bar ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  #hero,
+  #form,
+  #features,
+  #how-it-works,
+  #pricing,
+  footer {
+    width: 100%;
+  }
+  #hero {
+    margin-top: 40vh;
+  }
+  .icons {
+    display: none;
+  }
+  .features-items {
+    text-align: center;
+  }
+  #video {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #pricing {
+    flex-direction: column;
+    width: 100vw;
+  }
+ .pricing-card {
+  margin-bottom: 1rem;
+}
+}
